@@ -19,3 +19,39 @@ nav {
 #logo {
     width: 13%;
 }
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#trash {
+    width: 98vw;
+}
+
+#about-us{
+    text-align: center;
+    margin: 0% 5%;
+}
+
+#leaderboard {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#leaderboard-title {
+font-size: 50px;
+}
+
+#top-users {
+    font-size: 25px;
+}
+
+
+/* .first {
+    display: flex;
+    flex-direction: row;
+} */
