@@ -1,0 +1,21 @@
+body {
+    background-color: #6FDE8D;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #262E28;
+}
+
+#sign-in {
+    background-color: #19B543;
+    color: #262E28;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+#logo {
+    width: 13%;
+}

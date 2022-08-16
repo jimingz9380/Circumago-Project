@@ -1,0 +1,53 @@
+body{
+    background-color: #6FDE8D;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color:#19B543 ;
+    margin-bottom:2%;
+    border: 2px solid black;
+}
+
+#username{
+    margin-right:10%;
+}
+#main-div {
+    background-color: #19B543;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin:0% 5%;
+}
+
+#sub-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.shop-container{
+    display: block;
+    margin: 0% auto;
+    border: 2px solid black;
+    text-align: center;
+    width: 50%;
+    border-radius: 20px;
+}
+
+#contribute{
+    margin: 4% 40%;
+    border: 3px solid black;
+}
+
+#tribute{
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    background-color:#19B543 ;
+    
+}
+
+#submit-pic{
+    display: block;
+    margin: 3% auto;
+}
