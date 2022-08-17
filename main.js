@@ -1,12 +1,23 @@
+let score = 0;
 
-let point = document.getElementById("point");
 let submitBtn = document.getElementById("submit-btn");
-submitBtn.onclick = addpoint;
+submitBtn.onclick = function(){
+    let point = document.getElementById("point")
+    point.innerHTML = `C: ${pointGen()}`;
+}
 
+function pointGen(){
+    let Generator = Math.random();
+    Generator *= 100;
+    Generator = Math.floor(Generator);
 
-function addpoint(){
-    let v = 200
-    point.innerhtml = `C: ${v}`;
+    score += Generator
+    return score
+}
+
+let switchPage = document.getElementById("user_page");
+switchPage.onclick = function(){
+    localStorage.setItem("pValue", score)
 }
 
 
