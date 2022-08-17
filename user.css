@@ -47,6 +47,9 @@ body{
     
 }
 
+.img-size{
+    width:75%;
+}
 #submit-pic{
     display: block;
     margin: 3% auto;

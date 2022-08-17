@@ -1,10 +1,26 @@
-/* root{
+:root{
     --primary: #19B543;
     --secondary: #262E28;
     --accent: #6FDE8D;
 
-} */
+}
 
 body {
-    s
+    background-color: var(--secondary);
+    border: 20px solid #6FDE8D;
+}
+
+#main_div{
+   
+}
+#trash {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%
+}
+
+#sub_div{
+    text-align: center;
+    margin:2% 0%;
 }

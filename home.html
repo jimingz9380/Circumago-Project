@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To set-up the Google Sign-in -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="782306631458-k8ol5ois0anm5g6pm6k23hl3j5qp5ruv.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     <title>Home Screen</title>
     <link rel="stylesheet" href="home.css"/>
 </head>
 <body>
+    <!-- For the google sign-in -->
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script>
+
     <nav>
         <div><a href="home.html"><img id="logo" src="img/logo.jpg"/></a></div>
-        <div id="sign-in">Sign In</div>
+        <div id="sign-in"><a href="user.html">Sign In</div></a>
     </nav>
 
     <div id="content">
@@ -33,6 +58,8 @@
             <!-- <div  class="third">C</div> -->
         </div>
     </div>
-
+    
 </body>
 </html>
+
+<!-- yo brandon you there ? -->
